@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>誕生日当て太郎</title>
+</head>
+<body>
+  <div class="screen" id="startScreen">
+    <h1>誕生日当て太郎</h1>
+    <button class="button" id="start">スタート</button>
+  </div>
+  <div class="screen" id="mQuest" >
+    <p>この中にあなたの誕生"<span id="moon">月</span>"はありますか？</p>
+    <section>
+      <table class="panel">
+        <tr><td></td><td></td></td><td></td></tr>
+        <tr><td></td><td></td></td><td></td></tr>
+      </table>
+    </section>
+    <div id="selectButton">
+      <button class="button" id="yes">ある</button>
+      <button class="button" id="no">ない</button>
+    </div>
+  </div>
+  <div class="screen" id="dQuest" >
+    <p>この中にあなたの誕生"<span id="sun">日</span>"はありますか？</p>
+    <section>
+      <table class="panel">
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+        <tr><td></td><td></td><td></td><td></td></tr>
+      </table>
+    </section>
+    <div id="selectButton">
+      <button class="button" id="YES">ある</button>
+      <button class="button" id="NO">ない</button>
+    </div>
+  </div>
+  <div class="screen" id="waitFor">
+    <p id="thinking">考え中
+      <span id="dot1">.</span>
+      <span id="dot2">.</span>
+      <span id="dot3">.</span>
+    </p>
+    <button class="button" id="resultButton">結果を表示する</button>
+  </div>
+  <div class="screen" id="result">
+    <!-- <p>あなたの誕生日は...</p> -->
+    <p id="yourBirthDay"></p>
+  </div>
+  <script src="app.js"></script>
+  <script src="appFunc.js"></script>
+  <script src="appButton.js"></script>
+  <!-- <script src="app.js"></script> -->
+</body>
+</html>
