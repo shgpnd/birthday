@@ -100,11 +100,12 @@ table.panel {
 
 
 .summer {
-  height: 500px;
+  height: 700px;
   background-image: url(images/summer.png);
-  background-size: 800px;
+  width: 100%;
   background-repeat: no-repeat;
   color: rgba(0, 145, 255, 0.811);
+  /*   background-size: 800px; */
   /* border-bottom: 10px solid #aaa; */
 }
 
@@ -120,10 +121,11 @@ table.panel {
 
 .winter {
   height: 500px;
+  width: 100%;
   background-image: url(images/winter.jpg);
-  background-size: 800px;
+  /* background-size: 800px; */
   margin-top: 50px;
   padding-top: 130px;
   background-repeat: no-repeat;
-  color:rgba(80, 232, 255, 0.628);
+  color:rgba(80, 232, 255, 0.895);
 }
